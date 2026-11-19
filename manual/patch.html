@@ -2,37 +2,92 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Master patch — PatchWork Live manual</title><link rel="stylesheet" href="manual.css"></head>
 <body style="--page: #f57c00">
-<header><div class="in"><a class="home" href="index.html">PatchWork Live manual</a><nav><a href="start.html">Getting started</a> <a href="show.html">The Show page</a> <a href="changeovers.html">Changeovers and crew</a> <a href="rodeo.html">2ndRodeo (crew phones)</a> <a href="gear.html">Gear list</a> <a href="monitors.html">Monitors & RF</a> <a href="backline.html">Backline</a> <a href="network.html">Network, desks and Flow</a> <a href="reading.html">Reading riders</a> <a href="stage.html">Stage plots</a> <a href="files.html">Files, cloud and sharing</a></nav></div></header>
+<header><div class="in"><a class="home" href="index.html">PatchWork Live manual</a><nav><a href="start.html">Getting started</a> <a href="show.html">The Show page</a> <a href="changeovers.html">Changeovers and crew</a> <a href="rodeo.html">2ndRodeo (crew phones)</a> <a href="gear.html">Gear list</a> <a href="monitors.html">Monitors & RF</a> <a href="backline.html">Backline</a> <a href="network.html">Network and desks</a> <a href="reading.html">Reading riders</a> <a href="stage.html">Stage plots</a> <a href="files.html">Files, cloud and sharing</a></nav></div></header>
 <main>
 <h1>Master patch</h1>
 
-<p class="lead">The house's channel list: every line and where it's plugged in. Every act lands on these lines.</p>
+<p class="lead">The house's channel list: every line and where it's plugged in. Every act lands on these lines. It is
+kept in the House window, with the house's Gear list and its master plot.</p>
+<div class="two"><figure class="tall"><img src="img/patch.jpg" alt="The House window on Patch: the sample festival's Festival 32 lines" loading="lazy"><figcaption>The House window on Patch: the sample festival's Festival 32 lines</figcaption></figure>
+<div><h2>The House window</h2>
+<p>On the Show page, the <b>House row</b> under the stage chips has three small windows: <span class="ui">Gear</span>,
+<span class="ui">Plot</span> and <span class="ui">Patch</span>. Each opens the House window: the house's
+<a href="gear.html">Gear list</a>, its master plot (the stage editor) or its master patch, each filling the page.</p>
+<p>The bar at the top has a back arrow, <span class="ui">House · Main Stage</span> and <span class="ui">Gear | Plot |
+Patch</span> to hop between the three; the arrow, or Android's Back, returns to the show. On Patch the bar also has the
+summary chip ("48 lines · 2 boxes · 2 short"), <span class="ui">Needs</span> (what's short) and the patch's
+<span class="ui">⋮</span> menu.</p>
+<p>It is the house alone: lay out the stage and the patch's lines here. A band on the house is opened from that band's
+own row (see <b>A band on the house</b> below).</p>
+</div></div>
 <h2>Starting it</h2>
-<p>An empty stage shows <span class="ui">Start the master patch</span>: <span class="ui">New — pick the main snake</span>,
-or <span class="ui">A ready plan, a saved patch or a file</span> (Rock 24, Bluegrass 14, Festival 32, a .stagepatch or a
-desk's CSV). The page's <span class="ui">⋮</span>: New, Load…, Save, Export (.stagepatch and .csv), Master plot, Place
-boxes for the night, Clear, Category order….</p>
+<p>With no house yet the House row reads <span class="ui">House &middot; none yet</span>, with only <span class="ui">Gear</span>
+beside <span class="ui">Set up the house</span>, which opens the House window on Patch. (A phone has no House row, no Plot and no
+Patch.) An empty stage shows <span class="ui">Start the master patch</span>: <span class="ui">New &mdash; pick the main snake</span>
+(<span class="ui">New &mdash; how many lines</span> if the Gear list has no main snake) or <span class="ui">Start from a ready
+plan</span>. The same window is <span class="ui">&#8942; &rarr; New / Load / Clear&hellip;</span>: New, <span class="ui">Clear this
+patch</span>, your saved patches, .stagepatch files from Download/PatchWork Live, and the ready plans (Bluegrass 32, Showcase 48,
+Festival 48, Festival 32 &mdash; patches under 32 lines are not offered).</p>
+<p>The patch's <span class="ui">&#8942;</span> on the bar: <span class="ui">Night grid</span>, <span class="ui">New / Load /
+Clear&hellip;</span>, <span class="ui">Fit the patch to the bands&hellip;</span>, <span class="ui">Save master patch</span>,
+<span class="ui">Save house as a template&hellip;</span>, <span class="ui">Export</span> (.stagepatch and .csv),
+<span class="ui">Category order&hellip;</span>, <span class="ui">Out of lines&hellip;</span>, <span class="ui">Band landing&hellip;</span>
+and <span class="ui">What are these lines?</span>. Fit and Band landing show only when a house patch exists.</p>
 <h2>Lines and acts</h2>
-<p>The grid shows each line with the picked act's input on it — pick another act at the top right. Inputs with no line
-show in red underneath. Tap a line to change what it takes, its name and category; hold its name to move it. In an act's
-window, <span class="ui">Channel numbers</span>: Master patch (its inputs take the line numbers) or Their own (1 to 1).</p>
+<p>In the House window the grid shows the house's own lines. Tap a line for its window: <span class="ui">Takes</span>,
+<span class="ui">Line name</span>, <span class="ui">Category</span>, <span class="ui">Locked</span> (no act lands on it),
+<span class="ui">Bad</span> (acts skip it) and <span class="ui">Remove</span>; hold its name to <span class="ui">Trace</span> who is on
+it tonight and where it goes. A band on these lines is seen from the band's own row (next). In a band's box (tap its name on
+the Show page) <span class="ui">Numbering</span> is <span class="ui"># Fest</span> (its inputs take the house patch's line
+numbers) or <span class="ui">1 to 1</span> (its own numbers).</p>
+<h2>A band on the house</h2>
+<p>Each band's row on the Show page has two small windows, <span class="ui">Plot</span> and <span class="ui">List</span>.
+With the House switch off (<span class="ui">As sent</span>) they show what the band sent: their plot, and their input
+list as read. With the switch on (<span class="ui">On the house</span>) the page is amber, the windows read
+<span class="ui">On the house</span> and <span class="ui">My lines</span>, and the band's window shows the band on the
+house's stage, or the whole house patch with the band's inputs on their lines.</p>
+<p>In that window, on the line under the bar, are <span class="ui">Lock in</span> (then <span class="ui">Locked in 4:12 pm</span>; a
+hold shows the plan as it was before the first Lock in) and <span class="ui">Setup</span>: <span class="ui">Inputs</span>,
+<span class="ui">Outputs</span>, <span class="ui">Monitors</span> (Wedges, House IEMs, Their IEMs, Their rack, our mixes), then the
+band's own rows: <span class="ui">Send / print this plot</span>, <span class="ui">Role Favorites&hellip;</span>, <span class="ui">Read their
+plot with your AI</span>, <span class="ui">Clear</span> and <span class="ui">Rolling risers&hellip;</span>. Lock in keeps the stage the
+crew works from; hand edits after it still reach the changeover, the house's changes don't.</p>
+<p>On the band's list a tap on a row highlights that line's piece on the stage; the box at the row's end turns the line on or
+off for this band. A hold opens the line's window: <span class="ui">Move to line</span>, <span class="ui">Show on stage</span>,
+<span class="ui">Trace</span>, <span class="ui">Off for this band</span>, <span class="ui">Back to the house's line</span> and
+<span class="ui">Change the house line, for every band&hellip;</span>. A band added as <span class="ui">No plot yet &ndash; empty
+stage</span> is never on the house, and one added as <span class="ui">No plot yet &ndash; on the house</span> always is, whatever the
+switch says.</p>
 <h2>Categories</h2>
 <p>Hold a channel number — or hold and drag up / down for a block — and pick a category (Drums, Bass, Vocals, RF,
 Playback… or New…). Its lines are offered names (Kick, Snare…, Bass 1…). <span class="ui">Receives</span> says what its
-Utility lines take. Tap a category's chip to rename, recolour or remove it. <span class="ui">⋮ → Category order…</span>
+Utility lines take. Tap a category's chip to rename, recolour or remove it; holding it opens <span class="ui">Category order…</span>
 sets the order Push to patch uses.</p>
 <h2>Stage boxes</h2>
-<p>Tap the line count above the patch, then <span class="ui">+ Subsnake</span>: a name, inputs × returns and a colour.
+<p>On the House window's Patch, tap the line count above the patch, then <span class="ui">+ Subsnake</span>: a name, inputs × returns and a colour.
 Drag a box's picture onto a channel (a preview shows where it lands); over another box's channels choose Overwrite, Fill
-or Push. A box can sit on a multipin mult (W1) whose tails go to any channels. With an act picked, each line shows the
-box input that act plugs into — orange when it's far, red when no box has room. <span class="ui">Place boxes for the
-night</span> moves the boxes to serve every act best.</p>
+or Push. A box can sit on a multipin mult (W1) whose tails go to any channels. With a band on the patch, each line shows the
+box input that band plugs into — orange when it's far, red when no box has room.</p>
+<h2>Needs, fitting and landing</h2>
+<p><span class="ui">Needs</span> (or <span class="ui">Needs &middot; 2 short</span>) opens the list of what the acts need of each
+category, with spares; <span class="ui">Push to patch</span> there builds the lines from it (a copy of the old lines is kept; Undo).</p>
+<p><span class="ui">&#8942; &rarr; Fit the patch to the bands&hellip;</span> sizes each category from the bands' reads:
+<span class="ui">Size each category for</span> <span class="ui">3 in 4 bands</span>, <span class="ui">9 in 10 bands</span> or
+<span class="ui">Every band</span>; lock a category by hand, see which bands do not fit, then <span class="ui">Use this plan</span> (or
+<span class="ui">Not now</span>). Undo takes it back.</p>
+<p><span class="ui">&#8942; &rarr; Out of lines&hellip;</span>: <span class="ui">Keep order</span> or <span class="ui">Add at end</span> when a band
+has more mics than lines. <span class="ui">&#8942; &rarr; Band landing&hellip;</span>: <span class="ui">Wired vocals</span>,
+<span class="ui">Kit lines</span> (Only what they list / The whole kit) and <span class="ui">Extra drums</span> (Under Needs / On Util if
+open); a change lands every band on the house again. <span class="ui">&#8942; &rarr; Night grid</span> puts every act's channels side
+by side. <span class="ui">&#8942; &rarr; Save house as a template&hellip;</span> keeps the house's stage and patch together; it is then
+offered under Your templates when you start a master plot.</p>
 <h2>The master plot</h2>
-<p><span class="ui">⋮ → Master plot</span>: the house stage with its boxes, monitor spots, risers and house backline.
-Each act stands on the <b>House stage</b> (the master plot is the picture; their plot lights the matching house pieces)
-or on <b>Their stage</b> (their own plot, house pieces drawn in their spots) — a show default, switched per act.</p>
-<div class="tip">The sample festival's stages start without a master patch, so their acts use their own channel
-numbers — load a ready plan to see acts land on the lines.</div>
+<p><span class="ui">Plot</span> in the House window (the House row's Plot window, or <span class="ui">Gear | Plot |
+Patch</span> on its bar): the house stage with its boxes, monitor spots, risers and house backline, in the stage editor.</p>
+<p>The House switch on the House row is one switch for the whole Show page. <b>As sent</b>: every band's windows show
+what it sent. <b>On the house</b>: the page turns amber and every band is shown on the house — it stands on the
+house's gear and lands on the patch's lines.</p>
+<div class="tip">The sample festival's stages come with a house patch (Festival 32; the Acoustic Tent has Bluegrass 32) but no master plot, so the House row reads <span class="ui">House &middot; none yet</span> and every band shows what it sent. Open <span class="ui">Plot</span> in the House window and <span class="ui">Start the master plot</span> (pick Festival) to put bands on the house.</div>
 
 </main>
 <footer><div class="in">PatchWork Live · made by a working sound engineer · questions: Help → Send feedback in the app</div></footer>

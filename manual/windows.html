@@ -11,25 +11,28 @@ plot, the running order and the bands' plots — beside the tablet you take to t
 a file.</p>
 
 <h2>Installing</h2>
-<p>There is no installer yet. You get a <b>folder</b> (usually a zip — unzip it anywhere you like, for example your
-Documents or Desktop). Open it and double-click <span class="ui">PatchWorkLive.exe</span>. Keep the whole folder together: the
-exe needs the <span class="ui">data</span> folder and the <span class="ui">.dll</span> files beside it. To move it to another PC,
-copy the whole folder.</p>
+<p>You get one file, <span class="ui">PatchWorkLive-&hellip;-setup.exe</span>. Double-click it and follow the steps. It
+needs no administrator rights: it installs for you alone, adds <span class="ui">PatchWork Live</span> to the Start menu and, if you tick
+it, an icon on the Desktop, and it can be removed like any other program. Your plots, shows and backups live in
+<span class="ui">Documents\PatchWork Live</span> and are never touched by installing, updating or removing the app. To update, run the
+newer set-up over the old one.</p>
 <p>It needs Windows 10 or 11, 64-bit. The first time, Windows may say it protected your PC because the app is from an
 unknown publisher: choose <span class="ui">More info → Run anyway</span>.</p>
 <p>The window opens full-screen and is called <b>PatchWork Live</b>.</p>
 
-<h2>Two views: the stage and the show pages</h2>
-<p>On a tablet you turn the tablet to move between the stage (sideways) and the show's pages (upright). A computer window
+<h2>Two views: the stage and the Show page</h2>
+<p>On a tablet you turn the tablet to move between the stage (sideways) and the Show page (upright). A computer window
 stays wide, so there are two buttons instead:</p>
 <ul>
-<li><span class="ui">Show pages</span> (top right of the stage) — the Show and Master pages, the same pages the tablet shows
+<li><span class="ui">Show pages</span> (top right of the stage) — the Show page, the same page the tablet shows
 upright.</li>
-<li><span class="ui">Stage</span> (top right of the show pages) — back to the stage plot.</li>
+<li><span class="ui">Stage</span> (top right of the Show page) — back to the stage plot.</li>
 </ul>
 <p>Anywhere the app says "turn the tablet sideways", on Windows read it as "press Stage".</p>
-<p>On the <b>Master</b> page the stage sits on the left and the master patch on the right, both visible at once.
-<span class="ui">Patch</span> and <span class="ui">Plot</span> fold open and shut, so you can give either the whole window.</p>
+<p>The house is on the Show page's <b>House row</b>: its <span class="ui">Gear</span>, <span class="ui">Plot</span> and
+<span class="ui">Patch</span> windows open the House window — the house's Gear list, its master plot or its master
+patch, each filling the window. <span class="ui">Gear | Plot | Patch</span> on its bar hops between the three and its
+back arrow returns to the show.</p>
 
 <h2>Mouse</h2>
 <ul>
@@ -37,17 +40,22 @@ upright.</li>
 <li><b>Mouse wheel</b> zooms the stage about the pointer; the arrows button on the right (Fit) puts the whole stage back.</li>
 <li><b>Right-click</b> does what pressing and holding does on the tablet, in an act's piece picker (a position's sheet, a
 piece's own choices, a moved box back).</li>
-<li>The stage starts <span class="ui">LOCKED</span> (bottom right) so a stray drag does nothing — click it to unlock, click again to
-lock. Unlocked, clicking pieces selects them and an orange bar shows <span class="ui">Rotate all · Duplicate all · Delete all</span>.</li>
+<li><span class="ui">SELECT</span> (bottom right) is off at the start: a drag moves a person with their gear. Click it and clicking
+pieces picks several — a blue bar shows <span class="ui">Rotate all · Duplicate all · Delete all</span>; click it again to turn it off.</li>
 </ul>
 
 <h2>Keyboard</h2>
 <ul>
-<li><b>Delete</b> (or Backspace) takes the selected pieces off the stage, with an Undo message.</li>
+<li><b>Delete</b> (or Backspace) takes the selected pieces off the stage; use Ctrl+Z or the Undo button to bring them back. The "Deleted n items" line goes to <span class="ui">Messages</span>.</li>
 <li><b>Ctrl+Z</b> undoes, <b>Ctrl+Y</b> (or Ctrl+Shift+Z) redoes. They work on the stage; the Undo and Redo buttons in the top
 bar and on the toolbar always work too.</li>
+<li><b>Ctrl + mouse wheel</b> zooms the lists and pages.</li>
 <li>Typing in a box (a name, a number) is never interrupted by these keys.</li>
 </ul>
+
+<h2>Messages</h2>
+<p>The <span class="ui">Messages</span> envelope beside Undo lists what the app said (newest first, a yellow number counts the new ones). There are no
+pop-up lines on Windows either.</p>
 
 <h2>Where your files are</h2>
 <p>Windows has no <i>Download</i> folder for the app the way an Android tablet does, so everything is kept in one folder,
@@ -55,27 +63,28 @@ bar and on the toolbar always work too.</li>
 <ul>
 <li><span class="ui">Plots</span> — one file each, ending <span class="ui">.stageplot</span>. Plots kept in <span class="ui">Documents\plots</span> by an
 earlier version are moved in the first time you start.</li>
-<li><span class="ui">Shows</span> — the shows you save (<span class="ui">⋮ → Show → Save show</span> saves straight here, no window).</li>
+<li><span class="ui">Shows</span> — the shows you save (<span class="ui">⋮ → Show → Save show</span> saves straight here; it asks for a name only when the show has none).</li>
+<li><span class="ui">Patches</span> — the master patches you save (<span class="ui">.stagepatch</span>).</li>
 <li><span class="ui">Backups</span> and <span class="ui">PDFs</span> — the automatic backup copy, and the PDFs you make.</li>
 </ul>
 <p>The app's own working copy of the open show and your settings sit in its data folder under your user profile (AppData);
-you don't need to touch them. To save a show somewhere else, use <span class="ui">⋮ → Show → More saving → Save as zip</span> or
-<span class="ui">Save as…</span>, which asks where. To open one from anywhere: <span class="ui">⋮ → Show → Open show…</span> →
-<span class="ui">Other file…</span> opens the Windows Open window, which lists shows (<span class="ui">.stageshow</span>), plots
-(<span class="ui">.stageplot</span>) and zips.</p>
+you don't need to touch them. To move a show, use <span class="ui">⋮ → Show → More saving → Save show as zip</span>: it writes the zip into
+<span class="ui">Documents\PatchWork Live\Shows</span> and says so &mdash; copy it from there. <span class="ui">Save show as…</span> asks only for a
+new name. To open one from anywhere: <span class="ui">⋮ → Show → Shows…</span> → <span class="ui">Other file…</span> opens the Windows Open window,
+which lists shows (<span class="ui">.stageshow</span>), plots (<span class="ui">.stageplot</span>) and zips.</p>
 
 <h2>Moving a show between the PC and the tablet</h2>
 <ol>
-<li>On the one you built it on: <span class="ui">⋮ → Show → More saving → Save as zip</span>. The zip holds the show, every act's plot
+<li>On the one you built it on: <span class="ui">⋮ → Show → More saving → Save show as zip</span>. The zip holds the show, every act's plot
 and the schedule.</li>
 <li>Get the zip across (a USB cable, a cloud drive, an email to yourself).</li>
-<li>On the other: <span class="ui">⋮ → Show → Open show…</span> and pick the zip. On the tablet, the zip goes in the
+<li>On the other: <span class="ui">⋮ → Show → Shows… → Other file…</span> and pick the zip. On the tablet, the zip goes in the
 Download/PatchWork Live folder or you pick it with Other file….</li>
 </ol>
-<div class="tip">Do a Save as zip before you close a long session on the PC. It is also your backup.</div>
+<div class="tip">Do a Save show as zip before you close a long session on the PC. It is also your backup.</div>
 
 <h2>What works the same</h2>
-<p>The show pages (days, stages, running order, changeovers), the master patch and master plot, band plots and the plot
+<p>The Show page (days, stages, running order, changeovers), the House window (gear list, master plot and master patch), band plots and the plot
 editor, the schedule reader (from a file, pasted text, a PDF or a spreadsheet), the plot archive and
 <span class="ui">Past bands</span>, printing, and Help with this manual.</p>
 
